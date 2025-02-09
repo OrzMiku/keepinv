@@ -1,0 +1,18 @@
+name: keepinv
+version: '1.0-SNAPSHOT'
+main: show.miku.keepinv.KeepInv
+api-version: '1.21'
+commands:
+  keepinv:
+    description: "切换玩家死亡不掉落状态"
+    usage: |
+      /keepinv - 切换自己的死亡不掉落状态
+      /keepinv - [玩家名] <true/false> - 切换他人状态
+    permission: keepinv.command.keepinv
+permissions:
+  keepinv.commnad.keepinv:
+    description: "允许切换自己的死亡不掉落状态"
+    default: false
+  keepinv.command.keepinv.others:
+    description: "允许切换他人的死亡不掉落状态"
+    default: false
